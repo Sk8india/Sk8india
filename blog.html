@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: chalkduster;
+            margin: 0 0;
+            padding: 0 0;
+        }
+
+
+
+
+        nav {
+            position: relative;
+            font-size: 1.9vw;
+            display: flex;
+            justify-content: space-around;
+            background-color: black;
+        }
+
+        li {
+            position: relative;
+            list-style: none;
+            margin: 2.5vw 0;
+        }
+
+        nav li a {
+            position: relative;
+            color: white;
+            text-decoration: none;
+            font-family: chalkduster;
+        }
+
+        nav li a.active {
+            border-bottom: 2px solid white;
+        }
+
+        .blog {
+            position: relative;
+            margin: 3vw 5vw;
+            display: grid;
+            gap: 2vw;
+        }
+
+        .page {
+            position: relative;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 0vw 3vw;
+            border: 0.2vw solid black;
+            padding: 1vw 3vw;
+            border-radius: 1vw;
+        }
+
+        .blogimg {
+            position: relative;
+            align-self: center;
+        }
+
+        .blogimg img {
+            width: 28vw;
+            transition: 0.5s;
+            border-radius: 1vw;
+        }
+
+        .blogimg img:hover {
+            transform: scale(1.1);
+            border-radius: 1vw;
+            transition: 0.5s;
+        }
+
+        .blogtext {
+            position: relative;
+
+
+        }
+
+        .blogtext h1 {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            font-size: 2vw;
+            font-weight: normal;
+            margin: 0vw;
+        }
+
+        .blogtext h2 {
+            position: relative;
+            font-size: 1.4vw;
+            font-weight: normal;
+            margin: 0vw;
+        }
+
+        .blogtext h3 {
+            position: relative;
+        }
+
+        .blogtext h3 a {
+            color: black;
+            text-decoration: none;
+            border: 2px solid black;
+            padding: 0vw 1vw;
+            border-radius: 1vw;
+            transition: 0.6s;
+            font-size: 1.5vw;
+        }
+
+        .blogtext h3 a:hover {
+            color: white;
+            background-color: black;
+        }
+
+        .footer {
+            position: relative;
+            text-align: center;
+        }
+
+        .footer h3 {
+            position: relative;
+            display: flex;
+            justify-content: space-evenly;
+            background-color: black;
+            list-style: circle;
+            margin: 5vw 0 0 0;
+
+        }
+
+        .footer h3 li a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html"> Shop</a></li>
+        <li><a href="blog.html" class="active"> Blog</a></li>
+        <li><a href="skpark.html"> Skatepark</a></li>
+        <li><a href="about.html"> About</a></li>
+        <li><a href="sponsor.html"> Sponsor</a></li>
+        <li><a href="contact.html"> Contact us</a></li>
+
+
+    </nav>
+
+
+    <div class="blog" id="blogContainer">
+        <div class="page">
+            <div class="blogimg">
+                <img src="blog1.webp" alt="">
+            </div>
+            <div class="blogtext">
+                <h1>
+                    <p>Skateboard Categories</p>
+                </h1>
+                <h2>Skateboarding encompasses a variety of styles and disciplines, each with its own unique board design
+                    and riding techniques. Here are the primary skateboard categories:
+                </h2>
+                <h3>
+                    <a href="blog1.html">Read Blog</a>
+                </h3>
+            </div>
+        </div>
+        <div class="page">
+            <div class="blogimg">
+                <img src="blog2.jpeg" alt="">
+            </div>
+            <div class="blogtext">
+                <h1>
+                    <p>Longest distance on skateboard</p>
+                </h1>
+                <h2>The longest distance traveled on a skateboard is 12,159 kilometers (7,555 miles). This record was
+                    set by Rob Thomson from New Zealand, who skated over a period of more
+                </h2>
+                <h3>
+                    <a href="blog2.html">Read Blog</a>
+                </h3>
+            </div>
+        </div>
+        <div class="page">
+            <div class="blogimg">
+                <img src="blog3.webp" alt="">
+            </div>
+            <div class="blogtext">
+                <h1>
+                    <p>Skateboarding in the Olympics:</p>
+                </h1>
+                <h2>The inclusion of skateboarding in the Olympic Games has marked a significant milestone for the
+                    sport. Once considered an underground activity associated with rebellious youth culture,
+                </h2>
+                <h3>
+                    <a href="blog3.html">Read Blog</a>
+                </h3>
+            </div>
+        </div>
+        <div class="page">
+            <div class="blogimg">
+                <img src="blog4.avif" alt="">
+            </div>
+            <div class="blogtext">
+                <h1>
+                    <p>Kerala man on skateboard, meets tragic end</p>
+
+                </h1>
+                <h2>A Kerala youth who was travelling 3,511 kilometres on skateboards from Kanyakumari to Kashmir
+                    perished tragically in a hit-and-run accident. 31-year-old
+                </h2>
+                <h3>
+                    <a href="blog4.html">Read Blog</a>
+                </h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h3>
+            <li><a href="https://youtube.com/@RitikKratzel?si=I2tJh9jYVDuVeRj3">Youtube</a></li>
+            <li><a href="https://www.instagram.com/ritikkratzel/">Instagram</a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=61553185520050">Facebook</a></li>
+            <li><a href="https://patreon.com/ritikkratzel">Patreon</a></li>
+        </h3>
+    </div>
+</body>
+
+</html>

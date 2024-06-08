@@ -1,22 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>sk8india</title>
+
 </head>
-    <style>
-        .title{
-            position: relative;
-            font-size: 50vw;
-            color: black;
-            text-align: center;
-            margin: 1vw 0vw;
-        }
-    </style>
+<style>
+    body {
+        font-family: chalkduster;
+        margin: 0 0;
+        padding: 0 0;
+    }
+
+
+
+
+    nav {
+        position: relative;
+        font-size: 1.9vw;
+        display: flex;
+        justify-content: space-around;
+        background-color: black;
+    }
+
+    li {
+        position: relative;
+        list-style: none;
+        margin: 2.5vw 0;
+    }
+
+    nav li a {
+        position: relative;
+        color: white;
+        text-decoration: none;
+        font-family: chalkduster;
+    }
+
+    nav li a.active {
+        border-bottom: 2px solid white;
+    }
+
+    .intro {
+        position: relative;
+        gap: 0vw 7vw;
+        margin: 1vw 0vw;
+        text-align: center;
+    }
+
+    .intro img {
+        width: 98vw;
+        opacity: 0.7;
+        border-radius: 3vw;
+    }
+
+    .hometxt {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        border-radius: 8px;
+        color: white;
+        border-radius: 3vw;
+
+    }
+
+    .hometxt h1 {
+        font-size: 1.7vw;
+        font-weight: normal;
+
+    }
+
+    .hometxt h2 {
+        font-size: 1.3vw;
+        font-weight: normal;
+
+    }
+
+    .pro {
+        position: relative;
+        font-size: 3vw;
+        text-align: center;
+        margin: 4vw 0;
+        padding: 3vw 0;
+    }
+
+    .products {
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        margin: 2vw 0;
+        flex-wrap: wrap;
+    }
+
+    .feature {
+        position: relative;
+        margin: 2vw 0;
+        transition: transform 0.3s ease;
+
+    }
+
+    .feature img {
+        width: 25vw;
+        border-radius: 5vw;
+
+    }
+
+    .feature:hover {
+        transform: scale(1.12);
+
+    }
+
+
+
+
+    .footer {
+        position: relative;
+        text-align: center;
+    }
+
+    .footer h3 {
+        position: relative;
+        display: flex;
+        justify-content: space-evenly;
+        background-color: black;
+        list-style: circle;
+        margin: 5vw 0 0 0;
+
+    }
+
+    .footer h3 li a {
+        color: white;
+        text-decoration: none;
+    }
+</style>
+
 <body>
-    <div class="title">
-        SK8 India
+
+    <nav>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="shop.html"> Shop</a></li>
+        <li><a href="blog.html"> Blog</a></li>
+        <li><a href="skpark.html"> Skatepark</a></li>
+        <li><a href="about.html"> About</a></li>
+        <li><a href="sponsor.html"> Sponsor</a></li>
+        <li><a href="contact.html"> Contact us</a></li>
+
+
+    </nav>
+    <div class="intro">
+        <img src="home1.jpg" alt="">
+        <div class="hometxt">
+            <h1>Discover the Thrill</h1>
+            <h2>Sk8 India is your ultimate destination for everything skateboarding in India. From the latest gear and
+                apparel to expert advice and local skatepark information, we have everything you need to embrace the
+                skateboarding
+                lifestyle.</h2>
+        </div>
+    </div>
+    <div class="pro">
+        Products Featured
+        <div class="products">
+            <div class="feature">
+                <img src="product2.webp" alt="">
+                <div class="protxt">Skateboards</div>
+            </div>
+            <div class="feature">
+                <img src="product1.webp" alt="">
+                <div class="protxt">Apparel</div>
+            </div>
+            <div class="feature">
+                <img src="products3.webp" alt="">
+                <div class="protxt">Main parts</div>
+            </div>
+            <div class="feature">
+                <img src="product4.webp" alt="">
+                <div class="protxt">Protective accessories</div>
+            </div>
+            <div class="feature">
+                <img src="product5.webp" alt="">
+                <div class="protxt">Functional accesories</div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <h3>
+            <li><a href="https://youtube.com/@RitikKratzel?si=I2tJh9jYVDuVeRj3">Youtube</a></li>
+            <li><a href="https://www.instagram.com/ritikkratzel/">Instagram</a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=61553185520050">Facebook</a></li>
+            <li><a href="https://patreon.com/ritikkratzel">Patreon</a></li>
+        </h3>
     </div>
 </body>
+
 </html>

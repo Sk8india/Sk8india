@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sk8india</title>
+
+</head>
+<style>
+    body {
+        font-family: chalkduster;
+        margin: 0 0;
+        padding: 0 0;
+    }
+
+
+
+
+    nav {
+        position: relative;
+        font-size: 1.9vw;
+        display: flex;
+        justify-content: space-around;
+        background-color: black;
+    }
+
+    li {
+        position: relative;
+        list-style: none;
+        margin: 2.5vw 0;
+    }
+
+    nav li a {
+        position: relative;
+        color: white;
+        text-decoration: none;
+        font-family: chalkduster;
+    }
+
+    nav li a.active {
+        border-bottom: 2px solid white;
+    }
+
+    .all {
+        position: relative;
+        font-size: 3vw;
+        font-weight: normal;
+        text-align: center;
+        margin: 5vw 0;
+    }
+
+    .skateboards {
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .type {
+        position: relative;
+        text-align: center;
+    }
+
+    .type p {
+        font-size: 1.8vw;
+
+    }
+
+    .type img {
+        width: 21vw;
+        height: 16vw;
+        border-radius: 1vw;
+        transition: transform 0.3s ease;
+    }
+
+    .view {
+        position: relative;
+        font-size: 2vw;
+        font-weight: normal;
+        text-align: center;
+
+    }
+
+    .apparel {
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .atype {
+        position: relative;
+        text-align: center;
+    }
+
+    .atype p {
+        font-size: 1.8vw;
+
+    }
+
+    .atype img {
+        height: 30vw;
+        border-radius: 1vw;
+        transition: transform 0.3s ease;
+    }
+
+    .parts {
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .ptype {
+        position: relative;
+        text-align: center;
+    }
+
+    .ptype p {
+        font-size: 1.8vw;
+
+    }
+
+    .ptype img {
+        height: 30vw;
+        border-radius: 1vw;
+        transition: transform 0.3s ease;
+    }
+
+    .type img:hover,
+    .atype img:hover,
+    .ptype img:hover {
+        transform: scale(1.12);
+    }
+
+
+    .footer {
+        position: relative;
+        text-align: center;
+    }
+
+    .footer h3 {
+        position: relative;
+        display: flex;
+        justify-content: space-evenly;
+        background-color: black;
+        list-style: circle;
+        margin: 5vw 0 0 0;
+
+    }
+
+    .footer h3 li a {
+        color: white;
+        text-decoration: none;
+    }
+</style>
+
+<body>
+
+    <nav>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html" class="active"> Shop</a></li>
+        <li><a href="blog.html"> Blog</a></li>
+        <li><a href="skpark.html"> Skatepark</a></li>
+        <li><a href="about.html"> About</a></li>
+        <li><a href="sponsor.html"> Sponsor</a></li>
+        <li><a href="contact.html"> Contact us</a></li>
+
+
+    </nav>
+    <div class="all">
+        Complete Skateboards
+    </div>
+    <div class="skateboards">
+        <div class="type">
+            <img src="skateboard.webp" alt="">
+            <p>Skateboard</p>
+        </div>
+        <div class="type">
+            <img src="longboard.webp" alt="">
+            <p>Longboard</p>
+        </div>
+        <div class="type">
+            <img src="cruiser.webp" alt="">
+            <p>Cruiser board</p>
+        </div>
+        <div class="type">
+            <img src="pennyboard.webp" alt="">
+            <p> Penny board</p>
+        </div>
+    </div>
+    <div class="view">
+        View All Boards
+    </div>
+    <div class="all">
+        Apparel
+    </div>
+    <div class="apparel">
+        <div class="atype">
+            <img src="shoes.webp" alt="">
+            <p>Shoes</p>
+        </div>
+        <div class="atype">
+            <img src="pants.webp" alt="">
+            <p>Pants</p>
+        </div>
+        <div class="atype">
+            <img src="hoodie.webp" alt="">
+            <p>Hoodie</p>
+        </div>
+        <div class="atype">
+            <img src="thsirt.webp" alt="">
+            <p>TShirt</p>
+        </div>
+    </div>
+    <div class="view">
+        View All Apparel
+    </div>
+    <div class="all">
+        Skate parts
+    </div>
+    <div class="parts">
+        <div class="ptype">
+            <img src="part1.webp" alt="">
+            <p>Decks</p>
+        </div>
+        <div class="ptype">
+            <img src="part2.webp" alt="">
+            <p>Trucks</p>
+        </div>
+        <div class="ptype">
+            <img src="part3.webp" alt="">
+            <p>Wheels</p>
+        </div>
+    </div>
+    <div class="view">
+        View all skate parts
+    </div>
+
+    <div class="footer">
+        <h3>
+            <li><a href="https://youtube.com/@RitikKratzel?si=I2tJh9jYVDuVeRj3">Youtube</a></li>
+            <li><a href="https://www.instagram.com/ritikkratzel/">Instagram</a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=61553185520050">Facebook</a></li>
+            <li><a href="https://patreon.com/ritikkratzel">Patreon</a></li>
+        </h3>
+    </div>
+</body>
+
+
+</html>
