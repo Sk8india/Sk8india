@@ -18,11 +18,19 @@
 
 
     nav {
-        position: relative;
+        position: sticky;
+        position: -webkit-sticky;
         font-size: 1.9vw;
         display: flex;
         justify-content: space-around;
+        z-index: 1;
+        top: 0;
+        transition: background-color 0.3s ease
+    }
+
+    .navbar.scroll {
         background-color: black;
+        /* Background color when scrolled */
     }
 
     li {
@@ -45,19 +53,22 @@
     .intro {
         position: relative;
         gap: 0vw 7vw;
-        margin: 1vw 0vw;
+        top: -10vw;
         text-align: center;
+        margin: 0 0;
+        padding: 0 0;
     }
 
     .intro img {
-        width: 98vw;
+        width: 100vw;
         opacity: 0.7;
+        height: 62vw;
         border-radius: 3vw;
     }
 
     .hometxt {
         position: absolute;
-        top: 50%;
+        top: 80%;
         left: 50%;
         transform: translate(-50%, -50%);
         padding: 20px;
@@ -83,7 +94,7 @@
         position: relative;
         font-size: 3vw;
         text-align: center;
-        margin: 4vw 0;
+        margin: 2vw 0;
         padding: 3vw 0;
     }
 
@@ -91,7 +102,7 @@
         position: relative;
         display: flex;
         justify-content: space-around;
-        margin: 2vw 0;
+        margin: 2vw 1vw;
         flex-wrap: wrap;
     }
 
@@ -135,17 +146,20 @@
         color: white;
         text-decoration: none;
     }
+    .footer h3 li a img{
+        width: 2vw;
+    }
 </style>
 
 <body>
 
-    <nav>
+    <nav id="navbar" class="navbar">
         <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="shop.html"> Shop</a></li>
-        <li><a href="blog.html"> Blog</a></li>
-        <li><a href="skpark.html"> Skatepark</a></li>
         <li><a href="about.html"> About</a></li>
+        <li><a href="ahop.html"> Shop</a></li>
+        <li><a href="skpark.html"> Skatepark</a></li>
         <li><a href="sponsor.html"> Sponsor</a></li>
+        <li><a href="blog.html"> Blog</a></li>
         <li><a href="contact.html"> Contact us</a></li>
 
 
@@ -165,34 +179,50 @@
         <div class="products">
             <div class="feature">
                 <img src="product2.webp" alt="">
-                <div class="protxt">Skateboards</div>
-            </div>
-            <div class="feature">
-                <img src="product1.webp" alt="">
-                <div class="protxt">Apparel</div>
+                <div class="protxt">Sk8 Rides</div>
             </div>
             <div class="feature">
                 <img src="products3.webp" alt="">
-                <div class="protxt">Main parts</div>
-            </div>
-            <div class="feature">
-                <img src="product4.webp" alt="">
-                <div class="protxt">Protective accessories</div>
+                <div class="protxt">Sk8 Deck</div>
             </div>
             <div class="feature">
                 <img src="product5.webp" alt="">
-                <div class="protxt">Functional accesories</div>
+                <div class="protxt">Sk8 Excess</div>
+            </div>
+            <div class="feature">
+                <img src="product1.webp" alt="">
+                <div class="protxt">Sk8 Rags</div>
+            </div>
+            <div class="feature">
+                <img src="product4.webp" alt="">
+                <div class="protxt">Sk8 Safe</div>
+            </div>
+            <div class="feature">
+                <img src="product6.webp" alt="">
+                <div class="protxt">Sk8 Park</div>
             </div>
         </div>
     </div>
     <div class="footer">
         <h3>
-            <li><a href="https://youtube.com/@RitikKratzel?si=I2tJh9jYVDuVeRj3">Youtube</a></li>
-            <li><a href="https://www.instagram.com/ritikkratzel/">Instagram</a></li>
-            <li><a href="https://www.facebook.com/profile.php?id=61553185520050">Facebook</a></li>
-            <li><a href="https://patreon.com/ritikkratzel">Patreon</a></li>
+            <li><a href="https://youtube.com/@RitikKratzel?si=I2tJh9jYVDuVeRj3"><img src="youtube.png" alt=""></a></li>
+            <li><a href="https://www.instagram.com/ritikkratzel/"><img src="instagram.png" alt=""></a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=61553185520050"><img src="facebook.png" alt=""></a></li>
+            <li><a href="https://patreon.com/ritikkratzel"><img src="patreon-2.png" alt=""></a></li>
         </h3>
     </div>
+
+    <script>
+        window.addEventListener('scroll', function() {
+    var navbar = document.getElementById('navbar');
+    if (window.pageYOffset > 200) { // Change 200 to the desired scroll position
+        navbar.classList.add('scroll');
+    } else {
+        navbar.classList.remove('scroll');
+    }
+});
+
+    </script>
 </body>
 
 </html>
