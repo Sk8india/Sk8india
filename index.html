@@ -68,7 +68,7 @@
 
     .hometxt {
         position: absolute;
-        top: 80%;
+        top: 88%;
         left: 50%;
         transform: translate(-50%, -50%);
         padding: 20px;
@@ -76,6 +76,18 @@
         color: white;
         border-radius: 3vw;
 
+    }
+.logo{
+    position: absolute;
+    z-index: 2;
+    top: 10vw;
+    left: 10vw;
+}
+    .logo img {
+        position: relative;
+        width: 20vw;
+        height: 20vw;
+        top: 10%;
     }
 
     .hometxt h1 {
@@ -146,7 +158,8 @@
         color: white;
         text-decoration: none;
     }
-    .footer h3 li a img{
+
+    .footer h3 li a img {
         width: 2vw;
     }
 </style>
@@ -165,6 +178,9 @@
 
     </nav>
     <div class="intro">
+        <div class="logo">
+            <img src="SlK-4.png" alt="">
+        </div>
         <img src="home1.jpg" alt="">
         <div class="hometxt">
             <h1>Discover the Thrill</h1>
@@ -207,20 +223,21 @@
         <h3>
             <li><a href="https://youtube.com/@RitikKratzel?si=I2tJh9jYVDuVeRj3"><img src="youtube.png" alt=""></a></li>
             <li><a href="https://www.instagram.com/ritikkratzel/"><img src="instagram.png" alt=""></a></li>
-            <li><a href="https://www.facebook.com/profile.php?id=61553185520050"><img src="facebook.png" alt=""></a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=61553185520050"><img src="facebook.png" alt=""></a>
+            </li>
             <li><a href="https://patreon.com/ritikkratzel"><img src="patreon-2.png" alt=""></a></li>
         </h3>
     </div>
 
     <script>
-        window.addEventListener('scroll', function() {
-    var navbar = document.getElementById('navbar');
-    if (window.pageYOffset > 200) { // Change 200 to the desired scroll position
-        navbar.classList.add('scroll');
-    } else {
-        navbar.classList.remove('scroll');
-    }
-});
+        window.addEventListener('scroll', function () {
+            var navbar = document.getElementById('navbar');
+            if (window.pageYOffset > 200) { // Change 200 to the desired scroll position
+                navbar.classList.add('scroll');
+            } else {
+                navbar.classList.remove('scroll');
+            }
+        });
 
     </script>
 </body>
